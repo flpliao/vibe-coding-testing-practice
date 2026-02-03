@@ -152,7 +152,7 @@ describe('LoginPage', () => {
             fireEvent.click(screen.getByRole('button', { name: '登入' }));
             
             // 期待輸出
-            expect(screen.getByText('密碼必須至少 8 個字元')).toBeInTheDocument();
+            expect(screen.getByText('密碼必須至少..liao 8 個字元')).toBeInTheDocument();
             expect(mockLogin).not.toHaveBeenCalled();
         });
     });
